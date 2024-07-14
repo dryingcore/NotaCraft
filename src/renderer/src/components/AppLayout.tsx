@@ -5,7 +5,7 @@ export const AppLayout = ({ className, children, ...props }: ComponentProps<'mai
   return (
     <main
       className={twMerge(
-        'w-full h-full flex flex-col items-center justify-center overflow-auto',
+        'h-full flex flex-row items-center justify-center overflow-auto',
         className
       )}
       {...props}
