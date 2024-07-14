@@ -1,6 +1,6 @@
 import { AppLayout, Content, SideBar } from '@/components'
 
-function App() {
+const App = () => {
   return (
     <AppLayout>
       <SideBar className="bg-slate-900">Sidebar Options</SideBar>
