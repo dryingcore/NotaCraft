@@ -1,9 +1,9 @@
 import { ComponentProps, forwardRef } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-export const AppLayout = ({ className, children, ...props }: ComponentProps<'div'>) => {
+export const AppLayout = ({ className, children, ...props }: ComponentProps<'main'>) => {
   return (
-    <div
+    <main
       className={twMerge(
         'w-full h-full flex flex-col items-center justify-center overflow-auto',
         className
@@ -11,7 +11,7 @@ export const AppLayout = ({ className, children, ...props }: ComponentProps<'div
       {...props}
     >
       {children}
-    </div>
+    </main>
   )
 }
 
