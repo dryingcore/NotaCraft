@@ -1,8 +1,9 @@
 import { notesMock } from '@/store/mocks'
+import { ComponentProps } from 'react'
 
-export const NotePreviewList = () => {
+export const NotePreviewList = ({ className, ...props }: ComponentProps<'ul'>) => {
   return (
-    <ul>
+    <ul {...props}>
       {notesMock.map((note) => (
         <li key={note.title}>{note.title}</li>
       ))}
