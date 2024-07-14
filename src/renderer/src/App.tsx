@@ -1,8 +1,13 @@
+import { AppLayout, Content, SideBar } from '@/components'
+
 function App() {
   return (
-    <div className="flex h-full items-center justify-center">
-      <span className="text-4xl text-blue-900">Hello from electron</span>
-    </div>
+    <AppLayout>
+      <SideBar className="p-2" border-red-500>
+        SideBar
+      </SideBar>
+      <Content> Content </Content>
+    </AppLayout>
   )
 }
 
