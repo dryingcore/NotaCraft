@@ -8,7 +8,7 @@ function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 900,
     height: 670,
-    show: false,
+    show: true,
     center: true,
     title: 'Mark IV - Coded by Gabriel Antunes Rocha',
     autoHideMenuBar: true,
