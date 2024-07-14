@@ -10,7 +10,7 @@ function createWindow(): void {
     height: 670,
     show: false,
     center: true,
-    title: 'Mark IV - Coded by Dryingcore',
+    title: 'Mark IV - Coded by Gabriel Antunes Rocha',
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
