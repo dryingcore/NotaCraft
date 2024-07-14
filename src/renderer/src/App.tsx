@@ -5,7 +5,7 @@ const App = () => {
     <AppLayout>
       <SideBar className="bg-slate-900">
         <ActionsButtonsRow className="flex justify-between mt-1" />
-        <NotePreviewList className="mt-1" />
+        <NotePreviewList className="mt-3, space-y-1" />
       </SideBar>
       <Content className="border-l bg-gray-800 border-l-white">Content</Content>
     </AppLayout>
