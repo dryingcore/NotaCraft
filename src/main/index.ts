@@ -11,8 +11,10 @@ function createWindow(): void {
     show: true,
     center: true,
     title: 'Mark IV - Coded by Gabriel Antunes Rocha',
-    autoHideMenuBar: true,
-    
+    trafficLightPosition: {
+      x: 10,
+      y: 10
+    },
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
