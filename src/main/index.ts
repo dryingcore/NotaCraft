@@ -10,6 +10,7 @@ function createWindow(): void {
     height: 670,
     show: true,
     center: true,
+    autoHideMenuBar: true,
     title: 'Mark IV - Coded by Gabriel Antunes Rocha',
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
