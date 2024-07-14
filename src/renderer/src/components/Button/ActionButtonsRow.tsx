@@ -1,8 +1,9 @@
 import { DeleteNoteButton, NewNoteButton } from '@/components'
+import { ComponentProps } from 'react'
 
-export const ActionsButtonsRow = () => {
+export const ActionsButtonsRow = ({ ...props }: ComponentProps<'div'>) => {
   return (
-    <div>
+    <div {...props}>
       <NewNoteButton />
       <DeleteNoteButton />
     </div>
