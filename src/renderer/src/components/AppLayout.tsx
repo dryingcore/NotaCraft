@@ -3,13 +3,7 @@ import { twMerge } from 'tailwind-merge'
 
 export const AppLayout = ({ className, children, ...props }: ComponentProps<'main'>) => {
   return (
-    <main
-      className={twMerge(
-        'h-full flex flex-row items-center justify-center overflow-auto',
-        className
-      )}
-      {...props}
-    >
+    <main className={twMerge('h-full flex flex-row', className)} {...props}>
       {children}
     </main>
   )
