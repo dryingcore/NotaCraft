@@ -11,7 +11,10 @@ function createWindow(): void {
     show: false,
     center: true,
     title: 'Mark IV - Coded by Dryingcore',
-    frame: false,
+    frame: true,
+    visualEffectState: 'active',
+    titleBarStyle: 'hidden',
+    trafficLightPosition: { x: 15, y: 10 },
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
