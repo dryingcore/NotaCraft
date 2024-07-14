@@ -11,7 +11,7 @@ function createWindow(): void {
     show: false,
     center: true,
     title: 'Mark IV - Coded by Dryingcore',
-    frame: true,
+    frame: false,
     visualEffectState: 'active',
     titleBarStyle: 'hidden',
     trafficLightPosition: { x: 15, y: 10 },
