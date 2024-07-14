@@ -4,7 +4,7 @@ function App() {
   return (
     <AppLayout>
       <SideBar className="p-2">SideBar</SideBar>
-      <Content className='border-l bg-slate-700'>Content</Content>
+      <Content className="border-l bg-slate-700 border-l-white">Content</Content>
     </AppLayout>
   )
 }
