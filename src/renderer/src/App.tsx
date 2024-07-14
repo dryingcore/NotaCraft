@@ -3,8 +3,8 @@ import { AppLayout, Content, SideBar } from '@/components'
 function App() {
   return (
     <AppLayout>
-      <SideBar className="p-2">SideBar</SideBar>
-      <Content className="border-l bg-slate-700 border-l-white">Content</Content>
+      <SideBar className="bg-slate-900">Sidebar Options</SideBar>
+      <Content className="border-l bg-gray-800 border-l-white">Content</Content>
     </AppLayout>
   )
 }
