@@ -16,11 +16,11 @@ export const NotePreview = ({
 }: NotePreviewProps) => {
   return (
     <div
-      className={cn(
-        'cursor-pointer px-2.5 rounded-md transition-colors duration-75',
-        className,
-        isActive && 'bg-slate-800'
-      )}
+      className={
+        (cn('cursor-pointer px-2.5 rounded-md transition-colors duration-75'),
+          { 'bg-slate-500': isActive, 'hover:bg-slate-400': !isActive },
+          className)
+      }
       {...props}
     >
       NotePreview
