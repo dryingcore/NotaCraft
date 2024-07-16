@@ -1,3 +1,29 @@
-export const NotePreview = () => {
-  return <div></div>
+import { cn } from '@renderer/utils'
+import { NoteInfo } from '@shared/models'
+import { ComponentProps } from 'react'
+
+export type NotePreviewProps = NoteInfo & {
+  isActive?: boolean
+} & ComponentProps<'div'>
+
+export const NotePreview = ({
+  title,
+  lastEditTime,
+  content,
+  isActive = false,
+  className,
+  ...props
+}: NotePreviewProps) => {
+  return (
+    <div
+      className={cn(
+        'cursor-pointer px-2.5 rounded-md transition-colors duration-75',
+        className,
+        isActive && 'bg-slate-800'
+      )}
+      {...props}
+    >
+      NotePreview
+    </div>
+  )
 }
