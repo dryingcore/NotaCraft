@@ -10,6 +10,10 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
   second: '2-digit'
 })
 
+export function formateDateFromMS(ms: number) {
+  return dateFormatter.format(new Date(ms))
+}
+
 export const cn = (...args: ClassValue[]) => {
   return twMerge(clsx(...args))
 }
