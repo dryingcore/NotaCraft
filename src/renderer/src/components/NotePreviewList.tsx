@@ -6,7 +6,7 @@ export const NotePreviewList = ({ className, ...props }: ComponentProps<'ul'>) =
   return (
     <ul {...props}>
       {notesMock.map((note) => (
-        <NotePreview key={note.title} {...note} />
+        <NotePreview key={note.title + note.lastEditTime} {...note} />
       ))}
     </ul>
   )
