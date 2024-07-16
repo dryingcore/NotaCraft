@@ -5,14 +5,7 @@ export type ActionButtonProps = ComponentProps<'button'>
 
 export const ActionButton = ({ className, children, ...props }: ActionButtonProps) => {
   return (
-    <button
-      className={twMerge(
-        'px-2 py-1 rounded-md',
-        'hover:bg-slate-800 transition-colors duration-100',
-        className
-      )}
-      {...props}
-    >
+    <button className={twMerge('px-2 py-1 rounded-md', className)} {...props}>
       {children}
     </button>
   )

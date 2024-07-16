@@ -3,7 +3,7 @@ import { LuFileSignature } from 'react-icons/lu'
 
 export const NewNoteButton = ({ ...props }: ActionButtonProps) => {
   return (
-    <ActionButton {...props}>
+    <ActionButton className="hover:bg-green-600" {...props}>
       <LuFileSignature className="w-4 h-4 text-white" />
     </ActionButton>
   )
