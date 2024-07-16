@@ -7,7 +7,7 @@ const App = () => {
         <ActionsButtonsRow className="flex justify-between mt-1" />
         <NotePreviewList className="mt-3, space-y-1" />
       </SideBar>
-      <Content className="border-l bg-[#282A3A] border-l-[#000000]">Content</Content>
+      <Content className="border-l bg-[#03001C] border-l-[#000000]">Content</Content>
     </AppLayout>
   )
 }
