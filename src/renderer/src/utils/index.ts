@@ -1,7 +1,7 @@
 import { ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
-const dateFormatter = new Intl.DateTimeFormat(window.navigator.language, {
+const dateFormatter = new Intl.DateTimeFormat("pt-BR", {
   year: 'numeric',
   month: '2-digit',
   day: '2-digit',
