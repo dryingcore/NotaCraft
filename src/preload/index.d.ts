@@ -1,7 +1,7 @@
 declare global {
   interface Window {
     context: {
-      // TODO
+      locale: string
     }
   }
 }
