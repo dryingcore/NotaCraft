@@ -1,5 +1,3 @@
 import { NoteInfo } from '@shared/models'
 
-export const notesMock: NoteInfo[] = [
-  
-]
+export const notesMock: NoteInfo[] = []
