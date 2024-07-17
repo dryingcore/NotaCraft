@@ -13,5 +13,5 @@
     "mdxeditor",
     "tailwindcss"
   ],
-  "gitdoc.enabled": false
+  "gitdoc.enabled": true
 }

@@ -25,3 +25,12 @@ MARK_IV is a desktop application built using Electron, React and Typescript. Thi
 - Modern Frontend: Developed with React for a responsive and dynamic user interface.
 - Type Safety: Leveraging Typescript for better code quality and maintainability.
 - Code Quality: Integrated with ESLint and Prettier for consistent code formatting and linting.
+
+### Recommended IDE Setup
+
+To ensure a smooth development experience, it is recommended to use VSCode along with the following extensions:
+
+- ESLint
+- Prettier
+
+### Project Setup
