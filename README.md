@@ -34,3 +34,13 @@ To ensure a smooth development experience, it is recommended to use VSCode along
 - Prettier
 
 ### Project Setup
+
+#### Install
+
+First, clone the repository and install necessary dependencies:
+
+```bash
+git clone https://github.com/dryingcore/mark_iv.git
+cd mark_iv
+npm install
+```
