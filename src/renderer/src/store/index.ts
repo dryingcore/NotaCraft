@@ -16,6 +16,6 @@ export const selectedNoteAtom = atom((get) => {
 
   return {
     ...selectedNote,
-    content: `# ${selectedNote.title}`
+    content: `${selectedNote.title}`
   }
 })
