@@ -21,7 +21,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-stone-700 rounded-md;
+    @apply bg-stone-800 rounded-md;
   }
 
   ::-webkit-scrollbar-track {
