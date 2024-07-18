@@ -21,10 +21,10 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-stone-800 rounded-md;
+    @apply bg-stone-600 rounded-md;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-stone-950 rounded-md;
+    @apply bg-stone-900 rounded-md;
   }
 }
