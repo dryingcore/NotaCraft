@@ -23,7 +23,7 @@ export const selectedNoteAtom = atom(async (get) => {
 export const createEmptyNoteAtom = atom(null, (get, set) => {
   const notes = get(notesAtom)
   const newNote: NoteInfo = {
-    title: 'Untitled',
+    title: `Note ${notes.length + 1}`,
     lastEditTime: new Date().getTime()
   }
   set(notesAtom, [...notes, newNote])
