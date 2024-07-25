@@ -1,5 +1,4 @@
 import { useNotesList } from '@/hooks/useNotesList'
-import { notesMock } from '@/store/mocks'
 import { NotePreview } from '@renderer/components'
 import { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
@@ -21,7 +20,7 @@ export const NotePreviewList = ({ onSelect, className, ...props }: NotePreviewLi
 
   return (
     <ul className={className} {...props}>
-      {notesMock.map((note, index) => (
+      {notes.map((note, index) => (
         <NotePreview
           key={note.title + note.lastEditTime}
           isActive={selectedNoteIndex === index}
