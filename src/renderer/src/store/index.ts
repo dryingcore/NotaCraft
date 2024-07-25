@@ -29,7 +29,7 @@ export const createEmptyNoteAtom = atom(null, (get, set) => {
     lastEditTime: new Date().getTime()
   }
 
-  set(notesAtom, [newNote, ...notes.filter((note) => note.title !== title)])
+  set(notesAtom, [newNote, ...notes.filter((note) => note.title !== newNote.title)])
   set(selectedNoteIndexAtom, 0)
 })
 
