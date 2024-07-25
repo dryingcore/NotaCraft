@@ -34,14 +34,12 @@ export const createEmptyNoteAtom = atom(null, (get, set) => {
 
 export const deleteNoteAtom = atom(null, (get, set) => {
   const notes = get(notesAtom)
-  const selectedNote = get(selectedNoteAtom)
+  const selectedNoteIndex = get(selectedNoteIndexAtom)
 
-  if (!selectedNote) return
+  if (selectedNoteIndex === null) return
 
-  set(
-    notesAtom,
-    notes.filter((note) => note.title !== selectedNote.title)
-  )
+  const updatedNotes = notes.filter((_, index) => index !== selectedNoteIndex)
 
+  set(notesAtom, updatedNotes)
   set(selectedNoteIndexAtom, null)
 })
