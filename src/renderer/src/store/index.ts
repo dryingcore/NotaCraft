@@ -9,7 +9,8 @@ export const selectedNoteIndexAtom = atom<number | null>(null)
 export const selectedNoteAtom = atom((get) => {
   const notes = get(notesAtom)
   const selectedNoteIndex = get(selectedNoteIndexAtom)
-  console.log(notes, selectedNoteIndex)
+
+  console.log(notes, selectedNoteIndex) // debug
 
   if (selectedNoteIndex == null) return null
 
