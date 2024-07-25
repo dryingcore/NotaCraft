@@ -1,4 +1,4 @@
-# MARK_IV
+# NotaCraft (1.0.0)
 
 An Electron application made with React and Typescript
 
@@ -17,7 +17,7 @@ An Electron application made with React and Typescript
 
 ### Introduction
 
-MARK_IV is a desktop application built using Electron, React and Typescript. This project combines the powerful capabilities of Electron for building cross-platform desktop apps with the flexibility and efficiency of React and Typescript.
+NotaCraft is a desktop application built using Electron, React and Typescript. This project combines the powerful capabilities of Electron for building cross-platform desktop apps with the flexibility and efficiency of React and Typescript.
 
 ### Features
 
