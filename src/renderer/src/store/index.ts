@@ -11,6 +11,7 @@ export const selectedNoteAtom = atom((get) => {
   const selectedNoteIndex = get(selectedNoteIndexAtom)
 
   console.log(selectedNoteIndex) // debug
+  console.log(notes) // debug
 
   if (selectedNoteIndex == null) return null
 
