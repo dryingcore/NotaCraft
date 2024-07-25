@@ -23,10 +23,9 @@ export const selectedNoteAtom = atom((get) => {
 export const createEmptyNoteAtom = atom(null, (get, set) => {
   const notes = get(notesAtom)
 
-  const title = `Note ${notes.length + 1}`
   const newNote: NoteInfo = {
-    title,
-    lastEditTime: new Date().getTime()
+    title: `Note ${notes.length + 1}`,
+    lastEditTime: Date.now()
   }
 
   set(notesAtom, [newNote, ...notes.filter((note) => note.title !== newNote.title)])
